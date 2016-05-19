@@ -1,0 +1,18 @@
+.card {
+  width: 200px;
+  height: 200px;
+  background: steelblue;
+  display: block;
+  transition: background 1s, transform 1s;
+}
+
+input {
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+input:checked +.card  {
+  background: lightcoral;
+  transform: rotateY(180deg);
+}
