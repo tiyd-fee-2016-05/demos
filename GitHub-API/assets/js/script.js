@@ -51,7 +51,7 @@ $(function(){
 
       };
    });
-
+//http://stackoverflow.com/questions/33144465/how-to-sort-an-array-of-objects-by-a-string-property
    function sortByProperty(key) {
     'use strict';
     return function (a, b) {
