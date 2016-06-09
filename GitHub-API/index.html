@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+   <link href = "Assets/CSS/styles.css" rel = "stylesheet">
+   <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+
+   <link type="text/css" rel="stylesheet" href="Assets/octicons/octicons.css">
+
+
+   <title>Octo-Cat's Profile</title>
+</head>
+<body>
+   <header class = "top-header">
+      <div = "headercontainer">
+         <div class = "cat icon"></div>
+         <input type = "text" placeholder = "Search Github">
+         <a href = "#">Pull Requests</a>
+         <a href = "#">Issues</a>
+         <a href = "#">Gist</a>
+      </div>
+   </header>
+<div class = "pagecontent">
+
+   <div class = "left-side">
+     <div class ="profile-pic"></div>
+      <br>
+      <div class = "names">
+         <label class = "my-name"></label><br>
+         <label class = "user-name"></label>
+      </div>
+      <ul class = "userdetails">
+         <span class="octicon octicon-organization"></span><li class = "company"></li><br><!--RG icons-->
+         <span class="octicon octicon-location"></span><li class = "location"></li><br><!--RG icons-->
+         <span class="octicon octicon-mail"></span> <li class = "email"></li><br><!--RG icons-->
+         <span class="octicon octicon-link"></span><li class = "website"></li><br><!--RG icons-->
+         <span class="octicon octicon-clock"></span> <li class = "date-joined"></li><!--RG icons-->
+
+      </ul>
+      <div class = "usernumbers">
+         <span class="usernumbersdata">
+            <span class= "followers">1.3k</span>
+            <p class= "followersname">followers</p>
+         </span>
+         <span class="usernumbersdata">
+            <span class = "starred">2</span>
+            <p class= "followersname">starred</p>
+         </span>
+         <span class="usernumbersdata">
+            <span class = "following"></span>
+            <p class= "followersname">following</p>
+         </span>
+      </div>
+   </div>
+   <div class = "right-side">
+      <header class = "tab-nav">
+         <h1 class = "one" id="initially-open"><span class="octicon octicon-plus"></span> Contributions</h1><!--RG icons-->
+         <h1 class = "two"><span class="octicon octicon-repo"></span> Repositories</h1><!--RG icons-->
+         <h1 class = "three"><span class="octicon octicon-rss"></span> Public Activity</h1><!--RG icons-->
+         <button class = "btn btn-primary" type = "button">
+         <span class="octicon octicon-person"><br></span>Follow</button><!--RG icons-->
+      </header>
+<!-- first piece on content - contributions tab -->
+      <div id = "one" class = "tab-content"><div class="poprepo">Popular Repos</div>
+         <ul class="contributions">
+         </ul>
+       </div>
+<!-- second piece of content - repositories tab -->
+       <div id = "two" class = "tab-content">
+          <nav class = "repositories-nav">
+             <input class = "repositories-nav-input" type = "text" placeholder="Find a repository...">
+             <button class = "repositories-nav-btn" name = "btn">Search</button>
+             <a href = "#" class = "all-link">All</a>
+             <a href = "#" class = "sources-link">Sources</a>
+             <a href = "#" class = "forks-link">Forks</a>
+             <a href = "#" class = "mirrors-link">Mirrors</a>
+          </nav>
+          <ul class = "all-repos">
+          </ul>
+       </div>
+<!-- third piece of content - public activity tab -->
+       <div id = "three" class = "tab-content">
+         <ul class = "public-activity">
+        </ul>
+       </div>
+
+   </div>
+
+   <footer class = "footer">
+      <nav>
+         <ul class = "left-footer-links">
+            <li class = "copyright">2016 GitHub, Inc.</li>
+            <a class = "footer-link" href = "https://help.github.com/articles/github-terms-of-service/">Terms</a>
+            <a class = "footer-link" href = "https://help.github.com/articles/github-privacy-policy/">Privacy</a>
+            <a class = "footer-link" href = "https://help.github.com/articles/github-security/">Security</a>
+            <a class = "footer-link" href = "https://github.com/contact">Contact</a>
+            <a class = "footer-link" href = "https://help.github.com/">Help</a>
+         </ul>
+         <ul class = "right-footer-links">
+            <a class = "footer-link" href = "https://status.github.com/">Status</a>
+            <a class = "footer-link" href = "https://developer.github.com/">API</a>
+            <a class = "footer-link" href = "https://training.github.com/">Training</a>
+            <a class = "footer-link" href = "https://github.myshopify.com/">Shop</a>
+            <a class = "footer-link" href = "https://github.com/blog">Blog</a>
+            <a class = "footer-link" href = "https://github.com/about">About</a>
+            <a class = "footer-link" href = "https://github.com/pricing">Pricing</a>
+         </ul>
+      </nav>
+   </footer>
+   </div>
+   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src = "Assets/JS/script.js"></script>
+</body>
+</html>

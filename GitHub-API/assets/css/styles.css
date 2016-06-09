@@ -1,0 +1,359 @@
+/*    Main Page Styling    */
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #4078c0
+}
+
+a:visited{
+color: #4078c0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pagecontent {
+   padding-top: 20px;
+   width: 980px;
+   margin-left: 150px;
+}
+
+/*          Header Styling*/
+
+.headercontainer {
+   padding-left: 150px;
+}
+
+.top-header {
+   background-color: #f5f5f5;
+   border: #e5e5e5;
+   padding: 10px 0;
+   padding-left: 150px;
+}
+
+.top-header a {
+   text-decoration: none;
+   color: black;
+   padding: 4px 8px;
+}
+
+.top-header a:hover {
+   color: #4078c0;
+}
+
+header input {
+   margin-right: 10px;
+   width: 360px;
+}
+
+/*          Left Side Styling       */
+
+.profile-pic {
+   height: 230px;
+   border-radius: 6px;
+}
+/*this is now redundant, as styling is handled by img declaration block below this*/
+
+img {
+  width: 230px;
+  border-radius: 6px;
+}
+
+.left-side {
+   float: left;
+   width: 25%;
+   /*border: 1px solid blue;*/
+   padding: 0 10px;
+   box-sizing: border-box;
+}
+
+.names {
+   margin: 12px 0;
+   border-bottom: 1px solid #eee;
+   padding-bottom: 10px;
+}
+
+.my-name {
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 30px;
+}
+
+.user-name {
+   color: #666;
+   font-size: 20px;
+}
+
+.userdetails {
+   padding: 12px 0;
+
+
+}
+
+.userdetails li {
+   padding: 3px 0 3px 24px;
+
+}
+
+.userdetails span +li{
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+.usernumbers {
+   border-top: 1px solid #eee;
+   border-bottom: 1px solid #eee;
+}
+
+.usernumbersdata{
+   display: block;
+   width: 33%;
+   float: left;
+   text-align: center;
+}
+
+.usernumbers span {
+   color: #4078c0;
+   font-weight: bold;
+   font-size: 28px;
+   line-height: 1;
+}
+
+.followersname {
+   font-size: 11px;
+   color: #767676;
+}
+
+.followersname:hover {
+   color: #4078c0;
+}
+
+/*          Right Side Styling         */
+
+.right-side {
+   float: left;
+   width: 74%;
+   /*border: 1px solid red;*/
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.poprepo {
+   background-color: #f5f5f5;
+   font-weight: bold;
+   padding: 10px;
+   border: 1px solid #d8d8d8;
+   border-radius: 3px 3px 0 0;
+   margin-top: 20px;
+}
+
+/*          Contributions Tab Styling         */
+
+
+.contributions {
+   border: solid 1px #d8d8d8;
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+}
+
+
+.contributions li{
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  padding: 6px 64px 6px 30px;
+}
+
+.contributions span {
+  margin-right: 10px;
+  margin-left: -20px;
+  color: #666;
+}
+
+
+.contribution-name {
+   color: #4078c0;
+   font-size: 14px;
+   padding: 6px 64px 6px 30px;
+   display: block;
+   position: relative;
+   border-top: solid 1px #e5e5e5;
+   /*list-style: none;*/
+   box-sizing: border-box;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.contribution-name:hover {
+   text-decoration: underline;
+}
+
+.tab-nav {
+  height: 20px;/*RG*/
+   /*display: inline;*/
+  background-color: transparent;
+   margin-bottom: 15px;
+}
+
+.tab-nav h1 {
+  float: left;/*RG*/
+  padding: 8px 12px;
+  border: solid 1px #ddd;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.public-activity li {
+  border-bottom: solid 1px #ddd;
+  padding: 0 0 13px 45px;
+}
+
+.event-time {
+  color: #bbb;
+  display: block;
+}
+
+.event-body {
+
+}
+
+/*        Follow btn         */
+button.btn.btn-primary {/*RG*/
+  float: right;
+  border: 1px solid white;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0, 15);
+  padding: 2px 10px 2px 10px;
+  border-radius: 3px;
+  background-color: #60b044;
+  background-image: linear-gradient(#8add6b, #60b044);
+  border-color: #5ca941;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+
+
+}
+
+/*          Repositories Tab Styling          */
+
+.repositories-nav {
+   padding-bottom: 12px;
+   padding-top: 12px;
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.repositories-nav-input {
+   padding: 7px 8px;
+   border-radius: 3px;
+}
+
+.repositories-nav-btn {
+   margin-right: 300px;
+   padding: 6px 12px;
+}
+
+.repositories-nav a {
+   text-decoration: none;
+   color: #4078c0;
+}
+
+.repositories-nav a:hover {
+   text-decoration: underline;
+}
+
+.all-repos li {
+   padding: 30px 0;
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.repositories-links {
+   font-size: 20px;
+   line-height: 1.2;
+   text-decoration: none;
+   color: #4078c0;
+   font-weight: bold;
+   padding-bottom:
+}
+
+.repositories-links:hover {
+   text-decoration: underline;
+}
+
+.repositories-description {
+   margin-top: 8px;
+   font-size: 14px;
+   color: #666;
+}
+
+.repositories-update {
+   margin-top: 12px;
+   font-size: 13px;
+   color: #888;
+}
+
+#stars {
+   float: right;
+   font-size: 12px;
+   font-weight: bold;
+   color: #888;
+}
+
+#stars:hover {
+   color: #4078c0;
+}
+
+/*          Footer Styling           */
+
+.footer {
+   border-top: 1px solid #e5e5e5;
+   padding: 40px 0;
+   margin-top: 40px;
+   display: inline-block;
+   width: 100%;
+}
+
+.copyright {
+   display: inline-block;
+   color: #888;
+   font-size: 12px;
+}
+
+.left-footer-links {
+   display: inline-block;
+   float: left;
+}
+
+.right-footer-links {
+   float: right;
+   display: inline;
+}
+
+.footer-link {
+   color: #4078c0;
+   text-decoration: none;
+   font-size: 12px;
+   padding-left: 20px;
+}
+
+.footer-link:hover {
+   text-decoration: underline;
+}
+
+.gregNewRepo {
+  font-size: 20px;
+  /*background-color: red;*/
+  border: 1px solid blue;
+  padding: 5px;
+}
