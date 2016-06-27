@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="coolCats">
+<h1>Welcome to my cat homepage ಠಿ ˑ̫ ಠಿ</h1>
+
+<h2>Awesome Cats</h2>
+<button ng-click="catFunc()">Reveal Cats</button>
+
+<div ng-show="showMenu">
+    <ul>
+      <li>Toblerone T. Murray</li>
+      <li>Kipling</li>
+      <li>Dr. Funtimes</li>
+      <li>Bathands</li>
+    </ul>
+</div>
+
+</div>
+
+<script src="controllers.js"></script>
+</body>
+</html>
